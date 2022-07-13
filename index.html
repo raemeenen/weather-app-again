@@ -13,6 +13,12 @@
       src="https://kit.fontawesome.com/3be9465b30.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
     <link href="src/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -23,20 +29,20 @@
             <input
               type="text"
               placeholder="Enter City"
-              class="col-8 enter-city-input"
+              class="col-6 enter-city-input"
               id="enter-city-input"
             />
             <button
               type="submit"
               value="Submit"
-              class="col-2 btn btn-primary submit"
+              class="col-1 btn btn-primary submit"
             >
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <button
               type="submit"
               value="Submit"
-              class="col-2 btn btn-success submit"
+              class="col-1 btn btn-success submit"
             >
               <i class="fa-solid fa-location-dot"></i>
             </button>
@@ -47,13 +53,15 @@
           <h3>Day and Time</h3>
         </div>
         <div class="row current-weather">
-          <div class="col-6 current-temp" id="current-temp">
-            <span class="weather-icon">icon</span>
-            <span class="degrees">°</span>
-            <span class="units">F/C</span>
+          <div class="col-6">
+            <div class="current-temp" id="current-temp">
+              <span class="weather-icon">icon</span>
+              <span class="degrees">°</span>
+              <span class="units">F/C</span>
+            </div>
           </div>
-          <div class="col-6 current-conditions" id="current-conditions">
-            <ul>
+          <div class="col-6">
+            <ul class="current-conditions" id="current-conditions">
               <li class="description">description</li>
               <li class="humidity">%</li>
               <li class="wind speed">mph</li>

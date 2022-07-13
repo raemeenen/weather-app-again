@@ -1,0 +1,42 @@
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container{
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.weather-app-wrapper {
+  background-color: #cbd3f7;
+}
+.enter-city {
+  display:block;
+  margin:10px 0px;
+  text-align: center;
+}
+
+.enter-city-input {
+  padding: 4px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.current-city {
+  text-align: center;
+}
+
+.current-weather {
+  margin: 5px 25px;
+}
+
+.forecast {
+  margin: 5px 25px;
+  text-align: center;
+}
