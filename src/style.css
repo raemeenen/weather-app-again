@@ -43,14 +43,20 @@ ul {
   margin: 5px 25px;
 }
 
-.weather-icon, .degrees {
-  font-size: 48px;
+.weather-icon {
+  float: left;
+  position: relative;
+  top: -6px;
+}
+
+.degrees {
+  font-size: 60px;
 }
 
 .units {
   font-size: 20px;
   position: relative;
-  top: -18px;
+  top: -22px;
 }
 
 .description {
