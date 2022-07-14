@@ -10,12 +10,6 @@ a:link {
   text-decoration: none;
 }
 
-.container{
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-}
-
 .weather-app {
   border-radius: 10px;
   background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);;
