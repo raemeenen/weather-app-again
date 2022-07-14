@@ -14,12 +14,14 @@ a:link {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  max-width: 600px;
 }
 
-.weather-app-wrapper {
+.weather-app {
+  border-radius: 10px;
   background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);;
   box-shadow: 3px 2px 2px rgb(217, 214, 214);
+  max-width: 600px;
+  margin: 30px auto 10px;
 }
 .enter-city {
   display:block;
@@ -73,11 +75,15 @@ a:link {
   top: -22px;
 }
 
+.current-conditions {
+  font-size: 20px;
+}
+
 .description:first-letter {
   text-transform: capitalize;
 }
 
 footer {
-  display: block;
+  text-align: center;
   font-size: 12px;
 }
