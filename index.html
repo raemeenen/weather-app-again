@@ -51,7 +51,10 @@
         </div>
         <div class="row">
           <h1 class="current-city" id="current-city">Current City</h1>
-          <h4 class="current-date" id="current-date">Day and Time</h4>
+          <ul class="current-date">
+            Last updated:
+            <span id="current-date"> Day Time</span>
+          </ul>
         </div>
         <div class="row current-weather">
           <div class="col-6">
@@ -65,9 +68,11 @@
           </div>
           <div class="col-6">
             <ul class="current-conditions" id="current-conditions">
-              <li class="description">description</li>
-              <li class="humidity">%</li>
-              <li class="wind speed">mph</li>
+              <li class="description" id="description">description</li>
+              <li class="humidity">Humidity: <span id="humidity"></span>%</li>
+              <li class="wind-speed">
+                Wind: <span id="wind-speed"></span> mph
+              </li>
             </ul>
           </div>
         </div>

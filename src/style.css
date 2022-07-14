@@ -10,7 +10,7 @@ ul {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .weather-app-wrapper {
@@ -31,10 +31,12 @@ ul {
 .current-city {
   font-size: 48px;
   text-align: center;
+  margin: 0;
 }
 
 .current-date {
   text-align: center;
+  padding: 0;
 }
 
 .current-weather {
@@ -49,6 +51,10 @@ ul {
   font-size: 20px;
   position: relative;
   top: -18px;
+}
+
+.description {
+  text-transform: capitalize;
 }
 
 .forecast {
