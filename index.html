@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="src/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -48,15 +49,17 @@
             </button>
           </form>
         </div>
-        <div class="row current-city">
-          <h1>Current City</h1>
-          <h3>Day and Time</h3>
+        <div class="row">
+          <h1 class="current-city" id="current-city">Current City</h1>
+          <h4 class="current-date" id="current-date">Day and Time</h4>
         </div>
         <div class="row current-weather">
           <div class="col-6">
             <div class="current-temp" id="current-temp">
-              <span class="weather-icon">icon</span>
-              <span class="degrees">°</span>
+              <span class="weather-icon"
+                ><img src="http://openweathermap.org/img/wn/04d@2x.png" alt=""
+              /></span>
+              <span class="degrees" id="degrees">90°</span>
               <span class="units">F/C</span>
             </div>
           </div>
