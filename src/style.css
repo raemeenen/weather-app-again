@@ -6,6 +6,10 @@ ul {
   list-style-type: none;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .container{
   border-radius: 10px;
   display: block;
@@ -59,11 +63,6 @@ ul {
   top: -22px;
 }
 
-.description {
+.description:first-letter {
   text-transform: capitalize;
-}
-
-.forecast {
-  margin: 5px 25px;
-  text-align: center;
 }

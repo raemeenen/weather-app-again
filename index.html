@@ -29,7 +29,7 @@
           <form class="enter-city" id="enter-city">
             <input
               type="text"
-              placeholder="Enter City"
+              placeholder="Search for a city"
               class="col-6 enter-city-input"
               id="enter-city-input"
             />
@@ -39,13 +39,6 @@
               class="col-1 btn btn-primary submit"
             >
               <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <button
-              type="submit"
-              value="Submit"
-              class="col-1 btn btn-success submit"
-            >
-              <i class="fa-solid fa-location-dot"></i>
             </button>
           </form>
         </div>
@@ -61,7 +54,10 @@
             <div class="current-temp" id="current-temp">
               <img src="" alt="" class="weather-icon" id="weather-icon" />
               <span class="degrees" id="degrees">90°</span>
-              <span class="units">F/C</span>
+              <span class="units"
+                ><a href="#" id="fahrenheit-link">F</a> |
+                <a href="#" id="celsius-link">C</a></span
+              >
             </div>
           </div>
           <div class="col-6">
@@ -72,46 +68,6 @@
                 Wind: <span id="wind-speed"></span> mph
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="forecast">
-          <div class="row">
-            <div class="col-2">
-              <div class="forecast-day">Day</div>
-              <div>icon</div>
-              <span class="forecast-high"></span>
-              <span class="forcast-low"></span>
-            </div>
-            <div class="col-2">
-              <div class="forecast-day">Day</div>
-              <div>icon</div>
-              <span class="forecast-high"></span>
-              <span class="forcast-low"></span>
-            </div>
-            <div class="col-2">
-              <div class="forecast-day">Day</div>
-              <div>icon</div>
-              <span class="forecast-high"></span>
-              <span class="forcast-low"></span>
-            </div>
-            <div class="col-2">
-              <div class="forecast-day">Day</div>
-              <div>icon</div>
-              <span class="forecast-high"></span>
-              <span class="forcast-low"></span>
-            </div>
-            <div class="col-2">
-              <div class="forecast-day">Day</div>
-              <div>icon</div>
-              <span class="forecast-high"></span>
-              <span class="forcast-low"></span>
-            </div>
-            <div class="col-2">
-              <div class="forecast-day">Day</div>
-              <div>icon</div>
-              <span class="forecast-high"></span>
-              <span class="forcast-low"></span>
-            </div>
           </div>
         </div>
       </div>
