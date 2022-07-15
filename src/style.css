@@ -6,11 +6,8 @@ ul {
   list-style-type: none;
 }
 
-a:link {
-  text-decoration: none;
-}
-
 .weather-app {
+  display: block;
   border-radius: 10px;
   background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);;
   box-shadow: 3px 2px 2px rgb(217, 214, 214);
@@ -53,6 +50,10 @@ a:link {
   text-decoration: none;
 }
 
+.units a {
+  text-decoration: none;
+}
+
 .weather-icon {
   float: left;
   position: relative;
@@ -75,6 +76,15 @@ a:link {
 
 .description:first-letter {
   text-transform: capitalize;
+}
+
+.weather-forecast {
+  text-align: center;
+  font-size: 16px;
+}
+
+.weather-forecast-day, .temperature-max {
+  font-weight: 600;
 }
 
 footer {

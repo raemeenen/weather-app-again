@@ -9,6 +9,32 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function showForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tues", "Wed"];
+  days.forEach(function (day) {
+  forecastHTML = 
+    forecastHTML + 
+    `
+    <div class="col-2">
+      <div class="weather-forecast-day">${day}</div>
+        <img
+        src="http://openweathermap.org/img/wn/09d@2x.png"
+        alt=""
+        width="36"
+        />
+        <div class="weather-forecast-temperatures">
+        <span class="temperature-max">101° </span>
+        <span class="temperature-min">78°</span>
+      </div>
+    </div>
+    `});
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#degrees");
   let cityElement = document.querySelector("#current-city");
@@ -70,3 +96,4 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 search("Kansas City");
+showForecast()
