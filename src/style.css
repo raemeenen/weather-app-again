@@ -81,6 +81,7 @@ ul {
 .weather-forecast {
   text-align: center;
   font-size: 16px;
+  margin: 5px;
 }
 
 .weather-forecast-day, .temperature-max {
