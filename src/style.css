@@ -8,6 +8,7 @@ ul {
 
 .weather-app {
   display: block;
+  padding:10px; 
   border-radius: 10px;
   background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);;
   box-shadow: 3px 2px 2px rgb(217, 214, 214);
@@ -79,11 +80,21 @@ ul {
 }
 
 .weather-forecast {
+  display: block;
   text-align: center;
   font-size: 16px;
-  margin: 5px;
+  margin: 0 auto
 }
 
+.forecast-box {
+  position:relative;
+  padding: 5px;
+  margin: 5px auto;
+  max-width: 100px;
+  border-radius: 10px;
+  background-color: #07a1e4;
+  box-shadow: 1px 2px 2px rgb(91, 91, 91);
+}
 .weather-forecast-day, .temperature-max {
   font-weight: 600;
 }
