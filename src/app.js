@@ -9,8 +9,8 @@ function showPosition(position) {
 
 function getCurrentLocation(event){
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showPosition) 
-}
+  navigator.geolocation.getCurrentPosition(showPosition);
+  }
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
@@ -82,6 +82,8 @@ function showTemperature(response) {
 
   fahrenheitTemperature = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
