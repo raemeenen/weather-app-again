@@ -61,6 +61,11 @@ ul {
   float: left;
   position: relative;
   top: -6px;
+  width: 100px;
+}
+
+.weather-icon-small {
+  width: 36px;
 }
 
 .degrees {
@@ -104,3 +109,4 @@ footer {
   text-align: center;
   font-size: 12px;
 }
+
