@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>⛅Weather App</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛅Weather App</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/3be9465b30.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="src/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3be9465b30.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="card weather-app">
-        <div class="row">
-          <form class="enter-city" id="enter-city">
-            <input
-              type="text"
-              placeholder="Search for a city"
-              class="col-sm-6 enter-city-input"
-              id="enter-city-input"
-            />
-            <button
-              type="submit"
-              value="Submit"
-              class="col-sm-1 btn btn-primary submit"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <button
-              type="submit"
-              value="Submit"
-              class="col-sm-1 btn btn-success submit"
-              id="current-location"
-            >
-              <i class="fa-solid fa-location-dot"></i>
-            </button>
-          </form>
-        </div>
-        <div class="row">
-          <h1 class="current-city" id="current-city">Current City</h1>
-          <ul class="current-date">
-            Last updated:
-            <span id="current-date"> Day Time</span>
-          </ul>
-        </div>
-        <div class="row current-weather">
-          <div class="col-sm-6">
-            <div class="current-temp" id="current-temp">
-              <img src="" alt="" class="weather-icon" id="weather-icon" />
-              <span class="degrees" id="degrees">90</span>
-              <span class="units"
-                ><a href="#" id="fahrenheit-link" class="active">F°</a> |
-                <a href="#" id="celsius-link">C°</a></span
+      <div class="weather-app-wrapper">
+        <div class="card weather-app">
+          <div class="row">
+            <form class="enter-city" id="enter-city">
+              <input
+                type="text"
+                placeholder="Search for a city"
+                class="col-sm-6 enter-city-input"
+                id="enter-city-input"
+              />
+              <button
+                type="submit"
+                value="Submit"
+                class="col-sm-1 btn btn-primary submit"
               >
-            </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button
+                type="submit"
+                value="Submit"
+                class="col-sm-1 btn btn-success submit"
+                id="current-location"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </form>
           </div>
-          <div class="col-sm-6">
-            <ul class="current-conditions" id="current-conditions">
-              <li class="description" id="description">description</li>
-              <li class="humidity">Humidity: <span id="humidity"></span>%</li>
-              <li class="wind-speed">
-                Wind: <span id="wind-speed"></span> mph
-              </li>
+          <div class="row">
+            <h1 class="current-city" id="current-city">Current City</h1>
+            <ul class="current-date">
+              Last updated:
+              <span id="current-date"> Day Time</span>
             </ul>
           </div>
+          <div class="row current-weather">
+            <div class="col">
+              <div class="current-temp" id="current-temp">
+                <img src="" alt="" class="weather-icon" id="weather-icon" />
+                <span class="degrees" id="degrees">90</span>
+                <span class="units"
+                  ><a href="#" id="fahrenheit-link" class="active">F°</a> |
+                  <a href="#" id="celsius-link">C°</a></span
+                >
+              </div>
+            </div>
+            <div class="col">
+              <ul class="current-conditions" id="current-conditions">
+                <li class="description" id="description">description</li>
+                <li class="humidity">Humidity: <span id="humidity"></span>%</li>
+                <li class="wind-speed">
+                  Wind: <span id="wind-speed"></span> mph
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <div class="weather-forecast" id="weather-forecast"></div>
+          </div>
         </div>
-        <div class="container">
-          <div class="weather-forecast" id="weather-forecast"></div>
-        </div>
+        <footer>
+          <a href="https://github.com/raemeenen/weather-app-again"
+            >Open-source code</a
+          >
+          by Rachel Meenen
+        </footer>
       </div>
-      <footer>
-        <a href="https://github.com/raemeenen/weather-app-again"
-          >Open-source code</a
-        >
-        by Rachel Meenen
-      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>
