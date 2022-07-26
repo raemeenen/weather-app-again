@@ -62,10 +62,12 @@ ul {
   position: relative;
   top: -6px;
   width: 100px;
+  height: 100px;
 }
 
 .weather-icon-small {
   width: 36px;
+  height: 36px;
 }
 
 .degrees {
