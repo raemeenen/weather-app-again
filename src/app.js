@@ -51,9 +51,10 @@ function showForecast(response) {
     <div class = "col-sm-2 forecast-box">
       <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
         <img
-          src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}.png"
+          src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
           alt=""
-          class="weather-icon-small img-fluid"
+          class="img-fluid"
+          width="36"
         />
         <div class="weather-forecast-temperatures">
           <span class="temperature-max">${Math.round(forecastDay.temp.max)}° </span>
